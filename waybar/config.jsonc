@@ -172,7 +172,7 @@
 
     "custom/modem": {
     	"interval": 1,
-	"format": "󱟽 {}",
+	"format": "{}",
 	"exec": "$HOME/.config/waybar/scripts/network.sh",
 	"on-click": "$HOME/.config/waybar/scripts/mobile-data.sh"
     },

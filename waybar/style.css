@@ -62,6 +62,7 @@ window#waybar.hidden {
 #temperature,
 #backlight,
 #network,
+#custom-modem,
 #pulseaudio,
 #custom-media,
 #custom-launcher,
@@ -173,6 +174,14 @@ label:focus {
     background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
     color: red;
     border-radius: 5px 0px;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BD2FF 90%);
+}
+
+#custom-modem {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
+    color: black;
+    border-radius: 5px;
     background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BD2FF 90%);
 }
 

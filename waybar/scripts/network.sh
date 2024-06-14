@@ -19,12 +19,12 @@ elif ((MODEM <= 50)); then
     CONNECTION=🌗
 elif ((MODEM <= 75)); then
     CONNECTION=🌖
-elif ((MODEM <= 50)); then
+elif ((MODEM <= 100)); then
     CONNECTION=🌕
 fi
 #CONNECTION=
 if ((MODEM == 0)); then
-    echo "No4G"
-elif ((MODEM < 0)); then
+    echo ""
+elif ((MODEM > 0)); then
     echo "${MODEM}% ${CONNECTION} 4G"
 fi
