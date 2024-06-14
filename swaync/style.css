@@ -1,0 +1,255 @@
+/*
+ * vim: ft=less
+ */
+
+@define-color border-color #073642;
+@define-color bg #002b36;
+@define-color bg-hover rgb(68, 68, 68);
+@define-color bg-focus rgb(68, 68, 68);
+@define-color bg-selected rgb(149, 125, 173);
+
+.notification-row {
+  outline: none;
+}
+.notification-row:focus,
+.notification-row:hover {
+  background: @bg-focus;
+}
+
+.notification {
+  border-radius: 5px;
+  margin: 6px 12px;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  background: #002b36;
+}
+
+/* Uncomment to enable specific urgency colors
+.low {
+  background: yellow;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.normal {
+  background: green;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.critical {
+  background: red;
+  padding: 6px;
+  border-radius: 10px;
+}
+*/
+
+.notification-content {
+  background: black;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.close-button {
+  background: black;
+  color: white;
+  text-shadow: none;
+  padding: 0 2px;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 20%;
+}
+.close-button:hover {
+  background: rgb(30, 30, 30);
+  transition: all 0.15s ease-in-out;
+}
+
+.notification-default-action,
+.notification-action {
+  padding: 4px;
+  margin: 0;
+  box-shadow: none;
+  background: @bg;
+  border: 1px solid @border-color;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background: @bg-hover;
+}
+
+.notification-default-action {
+  border-radius: 5px;
+}
+
+/* When alternative actions are visible */
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.notification-action {
+  border-radius: 5px;
+  border-top: none;
+  border-right: none;
+}
+
+/* add bottom border radius to eliminate clipping */
+.notification-action:first-child {
+  border-bottom-left-radius: 5px;
+}
+.notification-action:last-child {
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid @border-color;
+}
+
+.image {
+}
+
+.body-image {
+  margin-top: 6px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.summary {
+  color: white;
+  text-shadow: none;
+}
+
+.time {
+  color: white;
+  text-shadow: none;
+}
+
+.body {
+  background: grey;
+  color: white;
+  text-shadow: none;
+}
+
+.top-action-title {
+  color: white;
+  text-shadow: none;
+}
+
+.control-center-clear-all {
+  color: white;
+  text-shadow: none;
+  background: #002b36;
+  border: 1px solid @border-color;
+  box-shadow: none;
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
+  background-image: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #ff5f1f 90%);
+  border: solid black;
+}
+.control-center-clear-all:hover {
+  background: @bg-hover;
+}
+
+.control-center-dnd {
+  border-radius: 15px;
+  background: @bg;
+  border: 1px solid @border-color;
+  box-shadow: none;
+  background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
+  background-image: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #ff5f1f 90%);
+  border: solid black;
+}
+
+.control-center-dnd:checked {
+  background: @bg-selected;
+}
+.control-center-dnd slider {
+  background: @bg-hover;
+}
+
+.control-center {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+.control-center-list {
+  background: grey;
+  border-radius: 5px;
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+.widget-buttons-grid {
+    color: white;
+    border-radius: 5px;
+    background: #957dad;
+    background: #002b36;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
+    color: black;
+    background-image: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #ff5f1f 90%);
+    border: solid;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  margin: 3px;
+  background: #957dad;
+  background: #002b36;
+  border-radius: 5px;
+  color: white;
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
+  background-image: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #ff5f1f 90%);
+  border: solid black;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: rgba(122, 162, 247, 1);
+  color: white;
+}
+
+.widget-backlight {
+  background: #002b36;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius:0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
+  background-image: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #ff5f1f 90%);
+}
+
+.widget-volume {
+  background: #002b36;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
+  background-image: linear-gradient(-45deg, #FA8BFF 0%, #2BD2FF 52%, #ff5f1f 90%);
+}
+
+
+/* Mpris widget AKA volume control*/
+.widget-mpris {
+  /* The parent to all players */
+}
+
+.widget-mpris-player {
+  padding: 8px;
+  margin: 8px;
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+    font-size: 1.25rem;
+    background: #957dad;
+    background: #002b36;
+    border-radius: 5px;
+    color: white;
+}
+
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}
