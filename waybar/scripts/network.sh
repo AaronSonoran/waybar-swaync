@@ -24,7 +24,7 @@ elif ((MODEM <= 100)); then
 fi
 #CONNECTION=
 if ((MODEM == 0)); then
-    echo ""
+    echo "NoLTE"
 elif ((MODEM > 0)); then
     echo "${MODEM}% ${CONNECTION} 4G"
 fi
