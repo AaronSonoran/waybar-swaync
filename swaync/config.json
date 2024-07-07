@@ -55,7 +55,7 @@
         },
         {
           "label": "🔦",
-          "command": "~/.config/waybar/scripts/flashlight.sh"
+          "command": "/home/alarm/.config/waybar/scripts/flashlight.sh"
         },
         {
           "label": "💤",
@@ -63,7 +63,7 @@
         },
         {
           "label": "🛜",
-          "command": "~/.config/waybar/scripts/wifi.sh"
+          "command": "/home/alarm/.config/waybar/scripts/wifi.sh"
         }
       ]
     },
