@@ -33,7 +33,7 @@ window#waybar.hidden {
 #workspaces button:hover {
     background: lightblue;
     color: black;
-    border-bottom: 0px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
 }
 
 #workspaces button.focused {
@@ -51,7 +51,7 @@ window#waybar.hidden {
 
 #mode {
     background-color: #64727D;
-    border-bottom: 0px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
 #clock,
@@ -165,9 +165,7 @@ label:focus {
     background-color: #FA8BFF;
     background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
     color: black;
-    padding-left: 3px;
-    padding-right: 8px;
-    border-radius: 20px;
+    border-radius: 5px;
     background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BD2FF 90%);
 }
 
@@ -183,7 +181,7 @@ label:focus {
     background-color: #FA8BFF;
     background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
     color: black;
-    border-radius: 20px;
+    border-radius: 5px;
     background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BD2FF 90%);
 }
 
@@ -261,14 +259,10 @@ label:focus {
 }
 
 #tray {
-    background-color: #2BD2FF;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(-45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);
     color: black;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding-left: 3px;
-    padding-right: 5px;
-    border-radius: 10px;
-    border-bottom: 0px;
+    border-bottom: 1px;
 }
 
 #tray > .passive {
